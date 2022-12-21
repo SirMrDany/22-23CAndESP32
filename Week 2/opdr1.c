@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "adapter.h"
 
 int main()
 {
@@ -10,6 +11,9 @@ int main()
         printf ("You entered: %i\n", number);
         if(number < 0){
             stop = 1;
+        }
+        if(number == 2){
+            week1();
         }
     }while(stop != 1);
 }
